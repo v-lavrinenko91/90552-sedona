@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Седона: каталог</title>
+  </head>
+  <body>
+		<div class="wrapper">
+			<header class="main-header">
+				<div class="container">
+					<div class="main-logo">
+						<img src="" width="" height="" alt="City of Sedona">
+					</div>
+					<nav class="main-navigation">
+						<ul>
+							<li><a href="#">Информация</a></li>
+							<li><a href="#">Фото и видео</a></li>
+							<li><a href="#">Карта штата</a></li>
+							<li><a href="#">Гостиницы</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<main class="container">
+				<section class="user-form">
+					<form action="" method="">
+						<div class="form-first-part">
+							<span class="user-form-text">Инфраструктура:</span>
+							<label for="pool">Бассейн</label>
+							<input type="checkbox" id="pool" name="pool" checked>
+							<label for="parking">Парковка</label>
+							<input type="checkbox" id="parking" name="parking">
+							<label for="wi-fi">Wi-fi</label>
+							<input type="checkbox" id="wi-fi" name="wi-fi">
+							<span class="user-form-text">Тип жилья:</span>
+							<label for="hotel">Гостиница</label>
+							<input type="checkbox" id="hotel" name="hotel" checked>
+							<label for="motel">Мотель</label>
+							<input type="checkbox" id="motel" name="motel" checked>
+							<label for="apartments">Арартаменты</label>
+							<input type="checkbox" id="apartments" name="apartments" checked>
+						</div>
+						<div class="form-second-part">
+							<label for="range">Стоимость в сутки(Р):</label>
+							<div class="range-output"> <!--тут, наверное, выходные данные на js-->
+							</div>
+							<input type="range" min="0" max="3000" step=""> <!---второй ползунок, возможно, реализован на псевдоэлементе и js; шаг непонятно какой ставить-->
+							<a href="#">Показать</a>
+						</div>
+					</form>
+				</section>
+				<section class="search-info">
+					<div class="number-of-found">Найдено:</div> <!--количество найденных, я полагаю, будет реализовано на js-->
+					<div class="sort">
+						Сортировка:
+						<ul>
+							<li><a href="#">По цене</a></li>
+							<li><a href="#">По типу</a></li>
+							<li><a href="#">По рейтингу</a></li>
+						</ul>
+					</div>
+					<div class="pointers"></div> <!--стрелки, думаю, будут сделаны на псевдоэлементах-->
+				</section>
+				<section class="search-result">
+					<div class="info">
+						<img src="" width="" height="" alt="hotel-picture">
+						<h2>Amara Resort & Spa</h2>
+						<p>гостиница от 3500 руб.</p>
+						<a href="#">Подробнее</a>
+						<a href="#">Забронировать</a>
+					</div>
+					<div class="raiting">
+						<div class="stars">
+							<ul> <!--звездочки рейтинга по умолчанию скрыты и , возможно, как-то через js появляются-->
+								<li><img src="" width="" height=""></li>
+								<li><img src="" width="" height=""></li>
+								<li><img src="" width="" height=""></li>
+								<li><img src="" width="" height=""></li>
+								<li><img src="" width="" height=""></li>
+							</ul>
+						</div>
+						<div class="raiting-number">
+							Рейтинг: <!-- число, наверное, тоже как-то завязано на js-->
+						</div>
+					</div>
+				</section>
+				<section class="search-result">
+					<div class="info">
+						<img src="" width="" height="" alt="motel-picture">
+						<h2>Desert Quail Inn</h2>
+						<p>мотель от 2000 руб.</p>
+						<a href="#">Подробнее</a>
+						<a href="#">Забронировать</a>
+					</div>
+					<div class="raiting">
+						<div class="stars">
+							<ul> <!--звездочки рейтинга по умолчанию скрыты и , возможно, как-то через js появляются-->
+								<li><img src="" width="" height=""></li>
+								<li><img src="" width="" height=""></li>
+								<li><img src="" width="" height=""></li>
+								<li><img src="" width="" height=""></li>
+								<li><img src="" width="" height=""></li>
+							</ul>
+						</div>
+						<div class="raiting-number">
+							Рейтинг: <!-- число, наверное, тоже как-то завязано на js-->
+						</div>
+					</div>
+				</section>
+				<section class="search-result">
+					<div class="info">
+						<img src="" width="" height="" alt="appartment-picture">
+						<h2>Villas at Poco Diablo</h2>
+						<p>апартаменты от 4000 руб.</p>
+						<a href="#">Подробнее</a>
+						<a href="#">Забронировать</a>
+					</div>
+					<div class="raiting">
+						<div class="stars">
+							<ul> <!--звездочки рейтинга по умолчанию скрыты и , возможно, как-то через js появляются-->
+								<li><img src="" width="" height=""></li>
+								<li><img src="" width="" height=""></li>
+								<li><img src="" width="" height=""></li>
+								<li><img src="" width="" height=""></li>
+								<li><img src="" width="" height=""></li>
+							</ul>
+						</div>
+						<div class="raiting-number">
+							Рейтинг: <!-- число, наверное, тоже как-то завязано на js-->
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="main-footer">
+				<div class="container">
+					<span class="hashtag">#visitSedona</span>
+					<section class="footer-social-btns">
+						<a class="social-btn social-btn-tw" href="#">Твитер</a>
+						<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+						<a class="social-btn social-btn-ytb" href="#">Ютуб</a>
+					</section>
+					<section class="footer-copyright">
+						<img src="" width="" height="" alt="Html academy">
+					</section>
+				</div>
+			</footer>
+		</div>
+  </body>
+</html>
