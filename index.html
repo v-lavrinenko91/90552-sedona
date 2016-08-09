@@ -12,7 +12,7 @@
 						<ul>
 							<li><a href="#">Информация</a></li>
 							<li><a href="#">Фото и видео</a></li>
-							<li><img src="http://placehold.it/137x70" alt="City of Sedona"></li>
+							<li><a href="#"><img src="http://placehold.it/137x70" alt="City of Sedona"></a></li>
 							<li><a href="#">Карта штата</a></li>
 							<li><a href="#">Гостиницы</a></li>
 						</ul>
@@ -83,12 +83,14 @@
 				</section>
 				<div class="map-background"></div>
 				<div class="search-form">
-					<div class="search-form-title">Поиск гостиницы в Седоне</div>
-					<form action="" method="">		  
+					<form action="" method="">	
+						<input type="button" value="Поиск гостиницы в Седоне"> 
 						<label for="arrival-date">Дата заезда:</label>
 						<input type="date" id="arrival-date" name="arrival-date">
+						<span class="calendar-icon">#</span>
 						<label for="departure-date">Дата выезда:</label>
 						<input type="date" id="departure-date" name="departure-date">
+						<span class="calendar-icon">#</span>
 						<label for="adults">Взрослые:</label>
 						<input type="number" id="adults" step="1" min="1" max="10"> 	
 						<label for="children">Дети:</label>
