@@ -5,37 +5,42 @@
     <title>Седона</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
   </head>
   <body>
-		<div class="wrapper">
+		<div class="container">
 			<header class="main-header">
 				<nav class="main-navigation">
 					<a href="">
 						<img src="img/main-logo.png" width="137" height="70" alt="City of Sedona">
 					</a>
-					<ul class="main-navigation-list clearfix">
-						<li class="main-navigation-list-li to-left">
+					<ul class="main-navigation_list clearfix">
+						<li class="main-navigation_list_li to-left">
 							<a href="#">Информация</a>
 						</li>
-						<li class="main-navigation-list-li to-left">
+						<li class="main-navigation_list_li to-left">
 							<a href="#">Фото и видео</a>
 						</li>
-						<li class="main-navigation-list-li to-right">
+						<li class="main-navigation_list_li to-right">
 							<a href="#">Гостиницы</a>
 						</li>
-						<li class="main-navigation-list-li to-right">
+						<li class="main-navigation_list_li to-right">
 							<a href="#">Карта штата</a>
 						</li>
 					</ul>
 				</nav>
 			</header>
 			<main>
-				<div class="promo"></div>
+				<div class="promo">
+					<img src="img/promo-text-top.png" width="256" height="86" alt="Welcome to the Gorgeus">
+					<img class="promo-title" src="img/promo-title.png" width="458" height="78" alt="Sedona">
+					<img src="img/promo-text-bottom.png" width="296" height="80" alt="Because the Grand Canyon sucks!">
+				</div>
 				<section class="review">
 					<p class="review-title">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</p>
 					<p class="review-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 				</section>
-				<div class="facts facts-blue clearfix">
+				<div class="fact-with-img clearfix">
 					<section class="fact to-left">
 						<h2>Настоящий городок</h2>
 						<span class="number">- №1 -</span>
@@ -60,7 +65,7 @@
 						<p>Не только китайского, но и местного<br> производства!</p>
 					</section>
 				  </div>
-				<div class="facts facts-blue clearfix">
+				<div class="fact-with-img clearfix">
 					<section class="fact to-right">
 						<h2>Там есть мост дьявола</h2>
 						<span class="number">- №2 -</span>
@@ -68,7 +73,7 @@
 					</section>
 					<div class="fact-bg bg-left"></div>
 				</div>
-				<div class="facts facts-grey">
+				<div class="facts">
 					<section class="fact">
 						<h2>Небольшая площадь</h2>
 						<span class="number">- №3 -</span>
@@ -91,7 +96,7 @@
 					<div class="search-form">
 					<form action="" method="">
 						<input type="button" value="Поиск гостиницы в Седоне">
-						<div class="form-container">
+						<div class="search-form_container">
 							<div class="form-line">
 								<label for="arrival-date">Дата заезда:</label>
 								<input type="date" id="arrival-date" name="arrival-date">
@@ -125,7 +130,7 @@
 					<a class="social-btn social-btn-ytb" href="#">Ютуб</a>
 				</section>
 				<section class="footer-copyright">
-					Website by
+					<span>Website by</span>
 					<img src="img/copyright-logo.png" width="113" height="39" alt="Html academy">
 				</section>
 			</footer>
