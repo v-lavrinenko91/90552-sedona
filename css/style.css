@@ -1,19 +1,16 @@
 body {
-	min-width: 1200px;
 	font-size: 14px;
 	line-height: 21px;
-	text-transform: capitalize;
-	color: #000000;
 	font-family: "PT Sans", "Arial", serif;
 	background-color: #f2f2f2;
 }
 
 h2 {
-    font-size: 21px;
-		line-height: 26px;
-    color: #000000;
-    font-weight: bold;
-		text-transform: capitalize;
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: bold;
+	text-transform: capitalize;
 }
 
 .clearfix::after {
@@ -127,7 +124,7 @@ h2 {
 	margin-top: 30px;
 }
 
-.fact-background {
+.fact-bg {
 	width: 800px;
 	height: 256px;
 }
@@ -192,7 +189,7 @@ h2 {
 	margin: 0;
 }
 
-.map-background {
+.map-bg {
 	width: 100%;
 	height: 473px;
 	background: url('../img/map.jpg') no-repeat;
@@ -351,7 +348,7 @@ h2 {
 	padding: 35px 0;
 }
 
-.sort-filter>span {
+.sort-filter > span {
 	float: left;
 	width: 110px;
 	margin-right: 55px;
@@ -417,7 +414,7 @@ h2 {
 	padding-bottom: 15px;
 }
 
-.result-title h2{
+.result-title h2 {
 	float:left;
 	width: 360px;
 	margin: 0;
@@ -437,7 +434,7 @@ h2 {
 	margin-left: 40px;
 }
 
-.result-btns a{
+.result-btns a {
 	float: left;
 	width: 110px;
 	padding: 3px 0;
