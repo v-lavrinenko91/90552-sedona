@@ -85,7 +85,7 @@ h2 {
 	height: 360px;
 	padding: 75px 0;
 	background: url('../img/shape-for-bgd.png') no-repeat 0 100%,
-							url('../img/promo-bg.jpg') no-repeat 0 20%;
+							#e4f1f9 url('../img/promo-bg.jpg') no-repeat 0 20%;
 }
 
 .promo img {
@@ -175,12 +175,12 @@ img.promo-title {
 
 .bg-left {
 	float: left;
-	background: url('../img/fact-bgd-left.jpg') no-repeat;
+	background: #81b3d2 url('../img/fact-bgd-left.jpg') no-repeat;
 }
 
 .bg-right {
 	float: right;
-	background: url('../img/fact-bgd-right.jpg') no-repeat;
+	background: #81b3d2 url('../img/fact-bgd-right.jpg') no-repeat;
 }
 
 .features {
@@ -225,7 +225,7 @@ img.promo-title {
 
 .map-bg {
 	height: 473px;
-	background: url('../img/map.jpg') no-repeat;
+	background: #f2f1ef url('../img/map.jpg') no-repeat;
 }
 
 
@@ -263,13 +263,14 @@ img.promo-title {
 }
 
 .search-form_container {
-	
+	width: 458px;
+	margin: 0 auto;
 }
 
 .form-line {
 	position: relative;
-	font-size: 0;
 	margin-bottom: 30px;
+	font-size: 0;
 }
 
 .search-form input {
@@ -277,6 +278,7 @@ img.promo-title {
 	vertical-align: middle;
 	padding-top: 6px;
 	padding-bottom: 6px;
+	text-align: left;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
@@ -297,7 +299,8 @@ img.promo-title {
 .search-block label {
 	display: inline-block;
 	vertical-align: middle;
-	margin-right: 18px;
+	width: 112px;
+	text-align: left;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
@@ -315,7 +318,7 @@ img.promo-title {
 	right: 9px;
 	width: 21px;
 	height: 22px;
-	background: url('../img/spritesheet.png') no-repeat -10px -10px;
+	background: #f2f2f2 url('../img/spritesheet.png') no-repeat -10px -10px;
 	opacity: 0.5;
 }
 
@@ -324,7 +327,7 @@ img.promo-title {
 }
 
 .calendar-icon:active {
-	background: url('../img/spritesheet.png') no-repeat -10px -52px;
+	background: #f2f2f2 url('../img/spritesheet.png') no-repeat -10px -52px;
 }
 
 .search-block input[type="number"] {
@@ -339,7 +342,7 @@ img.promo-title {
 	right: 89px;
 	width: 12px;
 	height: 3px;
-	background: url('../img/spritesheet.png') no-repeat -10px -251px;
+	background: #f2f2f2 url('../img/spritesheet.png') no-repeat -10px -251px;
 	opacity: 0.5;
 }
 
@@ -357,7 +360,7 @@ img.promo-title {
 	right: 14px;
 	width: 11px;
 	height: 11px;
-	background: url('../img/spritesheet.png') no-repeat -10px -297px;
+	background: #f2f2f2 url('../img/spritesheet.png') no-repeat -10px -297px;
 	opacity: 0.5;
 }
 
@@ -374,30 +377,21 @@ img.promo-title {
 }
 
 .form-line-container .form-line {
-	//width: 228;
+	width: 228;
 	margin-bottom: 0;
 }
 
-.form-line-container .form-line:first-child {
-	text-align: left;
-}
-
-.form-line-container .adults-label {
-	margin-right: 40px;
-}
-
-.form-line-container .form-line:last-child {
-	text-align: right;
-}
-
 .form-line-container .children-label {
-	margin-right: 27px;
+	width: 85px;
+	padding-right: 27px;
+	text-align: right;
 }
 
 .search-form input[type="submit"] {
 	width: 100%;
 	display: block;
 	padding: 16px 0;
+	text-align: center;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -456,7 +450,7 @@ img.promo-title {
 .footer-copyright a {
 	width: 113px;
 	height: 39px;
-	background: url('../img/spritesheet.png') no-repeat -10px -133px;
+	background: #ffffff url('../img/spritesheet.png') no-repeat -10px -133px;
 }
 
 .footer-copyright a:hover {
@@ -498,7 +492,7 @@ section.footer-social-btns {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: url('../img/spritesheet.png') no-repeat;
+	background: #81b3d2 url('../img/spritesheet.png') no-repeat;
 }
 
 .social-btn:active::before {
@@ -528,7 +522,7 @@ section.footer-social-btns {
 .filters {
 	padding: 30px 70px;
 	color: #ffffff;
-	background: url('../img/filter-bgd.jpg') no-repeat;
+	background: #4e7faa url('../img/filter-bgd.jpg') no-repeat;
 }
 
 .filters-left-part {
@@ -892,7 +886,7 @@ section.footer-social-btns {
 	width: 18px;
 	height: 17px;
 	margin-right: 6px;
-	background: url('../img/spritesheet.png') no-repeat -10px -359px;
+	background: #ffffff url('../img/spritesheet.png') no-repeat -10px -359px;
 }
 
 .rating-stars .star:last-child {
