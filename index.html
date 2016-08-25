@@ -11,7 +11,7 @@
 		<div class="container">
 			<header class="main-header">
 				<nav class="main-navigation">
-					<a href="">
+					<a href="#">
 						<img src="img/main-logo.png" width="137" height="70" alt="City of Sedona">
 					</a>
 					<ul class="main-navigation_list clearfix">
@@ -64,10 +64,10 @@
 						<h2>Сувениры</h2>
 						<p>Не только китайского, но и местного<br> производства!</p>
 					</section>
-				  </div>
+				</div>
 				<div class="fact-with-img clearfix">
 					<section class="fact to-right">
-						<h2>Там есть мост дьявола</h2>
+						<h2>Там есть<br> мост дьявола</h2>
 						<span class="number">- №2 -</span>
 						<p>Да, по нему можно пройтись! Если конечно<br> вы осмелитесь</p>
 					</section>
@@ -93,34 +93,40 @@
 				<section class="search-form-title">
 					<h2>Заинтересовались?</h2>
 					<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-					<div class="search-form">
-					<form action="" method="">
-						<input type="button" value="Поиск гостиницы в Седоне">
-						<div class="search-form_container">
-							<div class="form-line">
-								<label for="arrival-date">Дата заезда:</label>
-								<input type="date" id="arrival-date" name="arrival-date">
-								<div class="calendar-icon"></div>
-							</div>
-							<div class="form-line">
-								<label for="departure-date">Дата выезда:</label>
-								<input type="date" id="departure-date" name="departure-date">
-								<div class="calendar-icon"></div>
-							</div>
-							<div class="form-line-container clearfix">
-								<div class="form-line to-left">
-									<label class="adults-label" for="adults">Взрослые:</label>
-									<input type="number" name="adults-number" id="adults" step="1" min="1" max="10">
+					<div class="search-block">
+						<button class="search-block_btn" type="button" name="search-form-btn">
+						Поиск гостиниц в Седоне
+						</button>
+						<form class="search-form" action="#" method="get">
+							<div class="search-form_container">
+								<div class="form-line">
+									<label for="arrival-date">Дата заезда:</label>
+									<input type="date" id="arrival-date" name="arrival-date">
+									<a href="#" class="calendar-icon"></a>
 								</div>
-								<div class="form-line to-right">
-									<label class="children-label" for="children">Дети:</label>
-									<input type="number" name="children-number "id="children" step="1" min="1" max="10">
+								<div class="form-line">
+									<label for="departure-date">Дата выезда:</label>
+									<input type="date" id="departure-date" name="departure-date">
+									<a href="#" class="calendar-icon"></a>
 								</div>
+								<div class="form-line-container clearfix">
+									<div class="form-line to-left">
+										<label class="adults-label" for="adults">Взрослые:</label>
+										<input type="number" name="adults-number" id="adults" step="1" min="1" max="10">
+										<a href="#" class="control-minus"></a>
+										<a href="#" class="control-plus"></a>
+									</div>
+									<div class="form-line to-right">
+										<label class="children-label" for="children">Дети:</label>
+										<input type="number" name="children-number" id="children" step="1" min="1" max="10">
+										<a href="#" class="control-minus"></a>
+										<a href="#" class="control-plus"></a>
+									</div>
+								</div>
+								<input type="submit" value="Найти">
 							</div>
-							<input type="submit" value="Найти">
-						</div>
-					</form>
-				</div>
+						</form>
+					</div>
 				</section>
 				<div class="map-bg"></div>
 			</main>
@@ -133,7 +139,7 @@
 				</section>
 				<section class="footer-copyright">
 					<span>Website by</span>
-					<a href=""><img src="img/copyright-logo.png" width="113" height="39" alt="Html academy"></a>
+					<a class="academy-logo" href="#"></a>
 				</section>
 			</footer>
 		</div>
