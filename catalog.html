@@ -9,33 +9,39 @@
   </head>
   <body>
 		<div class="container">
-			<header class="main-header"> 				
+<!--main-header-->
+			<header class="main-header">
 				<nav class="main-navigation">
-					<a href="">
-						<img src="img/main-logo.png" width="137" height="70" alt="City of Sedona">
-					</a>
-					<ul class="main-navigation_list clearfix">
-						<li class="main-navigation_list_li to-left">
+					<ul>
+						<li>
 							<a href="#">Информация</a>
 						</li>
-						<li class="main-navigation_list_li to-left">
+						<li>
 							<a href="#">Фото и видео</a>
 						</li>
-						<li class="main-navigation_list_li to-right">
-							<a href="#">Гостиницы</a>
+						<li>
+							<a class="logo-link" href="#">
+								<img src="img/main-logo.png" width="137" height="70" alt="City of Sedona">
+							</a>
 						</li>
-						<li class="main-navigation_list_li to-right">
+						<li>
 							<a href="#">Карта штата</a>
+						</li>
+						<li>
+							<a href="#">Гостиницы</a>
 						</li>
 					</ul>
 				</nav>
 			</header>
+<!--end main-header-->
 			<main>
+<!--блок с фильтрами поиска-->
 				<div class="filters clearfix">
 					<form class="clearfix" action="#" method="get">
+<!--выбор с чекбоксами-->
 						<div class="filters-left-part">
 							<div class="infrastructure">
-								<div class="filters-left-part_title">Инфраструктура:</div>						
+								<div class="filters-left-part_title">Инфраструктура:</div>			
 								<label for="pool">
 									<input type="checkbox" id="pool" name="pool" checked>
 									<span class="checkbox-indicator"></span>
@@ -71,6 +77,8 @@
 								</label>	
 							</div>
 						</div>
+<!--end выбор с чекбоксами-->
+<!--выбор диапазона стоимости-->
 						<div class="filter-range">
 							<div class="filter-range_title">Стоимость в сутки (р):</div>
 							<div class="price-controls">
@@ -90,8 +98,11 @@
 							</div>
 							<button class="btn-transparent" type="submit">Показать</button>
 						</div>
+<!--end выбор диапазона стоимости-->
 					</form>
 				</div>
+<!--end блок с фильтрами поиска-->
+<!--блок с сортировкой результатов поиска-->
 				<div class="sort-filter clearfix">
 					<span>Найдено: 3</span>
 					<div class="sort-method">
@@ -113,6 +124,8 @@
 						<a class="down active-bottom-arrow-control" href="#"></a>
 					</div> 
 				</div>
+<!--end блок с сортировкой результатов поиска-->
+<!--блок результатов поиска-->
 				<section class="search-result clearfix">
 					<div class="search-result-img">
 						<img src="img/hotel-photo.jpg" width="135" height="90" alt="hotel-picture">
@@ -122,7 +135,6 @@
 							<a href="#">Amara Resort & Spa</a>
 							<div class="rating-stars">
 								<ul>
-									<li class="star"></li>
 									<li class="star"></li>
 									<li class="star"></li>
 									<li class="star"></li>
@@ -189,7 +201,9 @@
 						</div>
 					</div>
 				</section>
+<!--end блок результатов поиска-->
 			</main>
+<!--main-footer-->
 			<footer class="main-footer">
 				<section class="hashtag">#visitSedona</section>
 				<section class="footer-social-btns">
@@ -202,6 +216,7 @@
 					<a class="academy-logo" href="#"></a>
 				</section>				
 			</footer>
+<!--end main-footer-->
 		</div>
   </body>
 </html>
