@@ -106,48 +106,48 @@
 					</section>
 				</div>
 <!--end блок с фактами-->
-<!-- блок предложения поиска с формой поиска внутри-->
+<!-- блок предложения поиска с кнопкой поиска внутри-->
 				<section class="search-form-title">
 					<h2>Заинтересовались?</h2>
 					<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-<!--форма поиска с кнопкой поиск-->
-					<div class="search-block">
-						<button class="search-block_btn" type="button" name="search-form-btn">
+					<button class="search-btn" type="button" name="search-form-btn">
 						Поиск гостиниц в Седоне
-						</button>
-						<form class="search-form" action="#" method="get">
-							<div class="search-form_container">
-								<div class="form-line">
-									<label for="arrival-date">Дата заезда:</label>
-									<input type="date" id="arrival-date" name="arrival-date">
-									<a href="#" class="calendar-icon"></a>
-								</div>
-								<div class="form-line">
-									<label for="departure-date">Дата выезда:</label>
-									<input type="date" id="departure-date" name="departure-date">
-									<a href="#" class="calendar-icon"></a>
-								</div>
-								<div class="form-line-container clearfix">
-									<div class="form-line to-left">
-										<label class="adults-label" for="adults">Взрослые:</label>
-										<input type="number" name="adults-number" id="adults" step="1" min="1" max="10">
-										<a href="#" class="control-minus"></a>
-										<a href="#" class="control-plus"></a>
-									</div>
-									<div class="form-line to-right">
-										<label class="children-label" for="children">Дети:</label>
-										<input type="number" name="children-number" id="children" step="1" min="1" max="10">
-										<a href="#" class="control-minus"></a>
-										<a href="#" class="control-plus"></a>
-									</div>
-								</div>
-								<input type="submit" value="Найти">
-							</div>
-						</form>
-					</div>
-<!--end форма поиска с кнопкой поиск-->
+					</button>		
 				</section>
 <!--end блок предложения поиска-->
+<!--форма поиска-->
+				<div class="search-block">
+					<form class="search-form" action="#" method="get">
+						<div class="search-form_container">
+							<div class="form-line">
+								<label for="arrival-date">Дата заезда:</label>
+								<input type="date" id="arrival-date" name="arrival-date">
+								<button type="button" class="calendar-icon"></button>
+							</div>
+							<div class="form-line">
+								<label for="departure-date">Дата выезда:</label>
+								<input type="date" id="departure-date" name="departure-date">
+								<button type="button" class="calendar-icon"></button>
+							</div>
+							<div class="form-line-container clearfix">
+								<div class="form-line to-left">
+									<label class="adults-label" for="adults">Взрослые:</label>
+									<input type="number" name="adults-number" id="adults" step="1" min="1" max="10">
+									<button type="button" class="control-minus"></button>
+									<button type="button" class="control-plus"></button>
+								</div>
+								<div class="form-line to-right">
+									<label class="children-label" for="children">Дети:</label>
+									<input type="number" name="children-number" id="children" step="1" min="1" max="10">
+									<button type="button" class="control-minus"></button>
+									<button type="button" class="control-plus"></button>
+								</div>
+							</div>
+							<input type="submit" value="Найти">
+						</div>
+					</form>
+				</div>
+<!--end форма поиска-->
 				<div class="map-bg"></div>
 			</main>
 <!--main-footer-->
@@ -165,5 +165,15 @@
 			</footer>
 <!--end main-footer-->
 		</div>
+		<script>
+			var link = document.querySelector(".search-btn");
+			var popup = document.querySelector(".search-form");
+			
+			link.addEventListener("click", function(event) {
+				event.preventDefault();
+				popup.classList.add("popup-down");
+			});
+			
+		</script>
   </body>
 </html>

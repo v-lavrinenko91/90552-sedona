@@ -148,6 +148,8 @@ img.promo-title {
 }
 
 .facts {
+	position: relative;
+	z-index: 10;
 	font-size: 0;
 	text-align: center;
 	background-color: #eeeeee;
@@ -218,8 +220,10 @@ img.promo-title {
 
 .search-form-title {
 	position: relative;
+	z-index: 10;
 	padding-top: 55px;
 	text-align: center;
+	background-color: #ffffff;
 }
 
 .search-form-title h2 {
@@ -234,22 +238,10 @@ img.promo-title {
 	margin-bottom: 50px;
 }
 
-.map-bg {
-	height: 473px;
-	background: #f2f1ef url('../img/map.jpg') no-repeat;
-}
-
-
-.search-block {
-	position: relative;
-	width: 568px;
-	margin: 0 auto;
-}
-
-
-.search-block_btn {
+.search-btn {
 	display: block;
 	width: 568px;
+	margin: 0 auto;
 	padding: 30px 0;
 	border: none;
 	font-size: 21px;
@@ -261,10 +253,19 @@ img.promo-title {
 	background-color: #766357;	
 }
 
+.map-bg {
+	height: 473px;
+	background: #f2f1ef url('../img/map.jpg') no-repeat;
+}
+
+.search-block {
+	position: relative;
+}
+
 .search-form {
 	position: absolute;
-	top: 86px;
-	left: 0;
+	top: -400px;
+	left: 316px;
 	width: 568px;
 	padding: 55px 0;
 	font-size: 23px;
@@ -323,13 +324,19 @@ img.promo-title {
 	padding-right: 10px;
 }
 
+.search-block button {
+	outline: 0;
+	border: 0;
+	padding: 0;
+}
+
 .calendar-icon {
 	position: absolute;
 	top: 9px;
 	right: 9px;
 	width: 21px;
 	height: 22px;
-	opacity: 0.5;
+	opacity: 0.2;
 	background: #f2f2f2 url('../img/spritesheet.png') no-repeat -10px -10px;
 }
 
@@ -593,10 +600,10 @@ section.footer-social-btns {
 .filters-left-part input[type="checkbox"]:checked + .checkbox-indicator::before {
 	content: "";
 	position: absolute;
-	top: 2px;
+	top: 3px;
 	left: 4px;
 	width: 5px;
-	height: 10px;
+	height: 8px;
 	border-radius: 20%;
 	transform: rotate(-45deg);
 	background-color: #ffffff;
@@ -907,8 +914,15 @@ section.footer-social-btns {
 	margin: 9px 0 11px;
 }
 
+.result-price .type-of-room {
+	float: left;
+	width: 110px;
+	margin-right: 8px;
+}
+
 .result-price span {
-	margin-left: 40px;
+	float: left;
+	width: 140px;
 }
 
 .result-btns a {
@@ -981,3 +995,30 @@ section.footer-social-btns {
 .arrow-control .active-bottom-arrow-control {
 	border-top-color: #81b3d2;
 }
+
+/*------animation------*/
+
+@keyframes translateBottom {
+	to {
+		transform: translateY(400px);
+	}
+}
+
+@keyframes translateTop {
+	to {
+		transform: translateY(-400px);
+	}
+}
+
+.popup-down {
+	animation-name: translateBottom;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+.popup-up {
+	animation-name: translateTop;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
