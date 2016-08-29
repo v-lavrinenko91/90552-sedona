@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Седона: каталог</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext" >
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 		<div class="container">
-<!--main-header-->
+		<!--main-header-->
 			<header class="main-header">
 				<nav class="main-navigation">
 					<ul>
@@ -20,7 +20,7 @@
 							<a href="#">Фото и видео</a>
 						</li>
 						<li>
-							<a class="logo-link" href="#">
+							<a class="logo-link" href="index.html">
 								<img src="img/main-logo.png" width="137" height="70" alt="City of Sedona">
 							</a>
 						</li>
@@ -28,17 +28,17 @@
 							<a href="#">Карта штата</a>
 						</li>
 						<li>
-							<a href="#">Гостиницы</a>
+							<a class="active-link" href="#">Гостиницы</a>
 						</li>
 					</ul>
 				</nav>
 			</header>
-<!--end main-header-->
+			<!--end main-header-->
 			<main>
-<!--блок с фильтрами поиска-->
+			<!--блок с фильтрами поиска-->
 				<div class="filters clearfix">
 					<form class="clearfix" action="#" method="get">
-<!--выбор с чекбоксами-->
+					<!--выбор с чекбоксами-->
 						<div class="filters-left-part">
 							<div class="infrastructure">
 								<div class="filters-left-part_title">Инфраструктура:</div>			
@@ -53,7 +53,7 @@
 									Парковка
 								</label>
 								<label for="wi-fi">
-									<input type="checkbox" id="wi-fi" name="wi-fi">
+									<input type="checkbox" id="wi-fi" name="wi-fi" disabled>
 									<span class="checkbox-indicator"></span>
 									Wi-fi
 								</label>
@@ -77,8 +77,8 @@
 								</label>	
 							</div>
 						</div>
-<!--end выбор с чекбоксами-->
-<!--выбор диапазона стоимости-->
+					<!--end выбор с чекбоксами-->
+					<!--выбор диапазона стоимости-->
 						<div class="filter-range">
 							<div class="filter-range_title">Стоимость в сутки (р):</div>
 							<div class="price-controls">
@@ -98,11 +98,11 @@
 							</div>
 							<button class="btn-transparent" type="submit">Показать</button>
 						</div>
-<!--end выбор диапазона стоимости-->
+					<!--end выбор диапазона стоимости-->
 					</form>
 				</div>
-<!--end блок с фильтрами поиска-->
-<!--блок с сортировкой результатов поиска-->
+				<!--end блок с фильтрами поиска-->
+				<!--блок с сортировкой результатов поиска-->
 				<div class="sort-filter clearfix">
 					<span>Найдено: 3</span>
 					<div class="sort-method">
@@ -124,15 +124,15 @@
 						<a class="down active-bottom-arrow-control" href="#"></a>
 					</div> 
 				</div>
-<!--end блок с сортировкой результатов поиска-->
-<!--блок результатов поиска-->
+				<!--end блок с сортировкой результатов поиска-->
+				<!--блок результатов поиска-->
 				<section class="search-result clearfix">
 					<div class="search-result-img">
 						<img src="img/hotel-photo.jpg" width="135" height="90" alt="hotel-picture">
 					</div>
 					<div class="result-info">
 						<div class="result-title clearfix">
-							<a href="#">Amara Resort & Spa</a>
+							<a href="#">Amara Resort &amp; Spa</a>
 							<div class="rating-stars">
 								<ul>
 									<li class="star"></li>
@@ -204,9 +204,9 @@
 						</div>
 					</div>
 				</section>
-<!--end блок результатов поиска-->
+			<!--end блок результатов поиска-->
 			</main>
-<!--main-footer-->
+			<!--main-footer-->
 			<footer class="main-footer">
 				<section class="hashtag">#visitSedona</section>
 				<section class="footer-social-btns">
@@ -219,7 +219,7 @@
 					<a class="academy-logo" href="#"></a>
 				</section>				
 			</footer>
-<!--end main-footer-->
+			<!--end main-footer-->
 		</div>
   </body>
 </html>

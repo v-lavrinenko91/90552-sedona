@@ -64,6 +64,11 @@ h2 {
 	padding-top: 0;
 }
 
+.main-navigation li:last-child {
+	width: 226px;
+	padding-left: 14px;
+}
+
 .main-navigation .logo-link {
 	display: block;
 }
@@ -94,8 +99,8 @@ h2 {
 	width: 100%;
 	height: 357px;
 	padding: 75px 0;
-	background: url('../img/shape-for-bgd.png') no-repeat 0 100%,
-							url('../img/promo-bg.jpg') no-repeat 0 22%;
+	background: url("../img/shape-for-bgd.png") no-repeat 0 100%,
+							url("../img/promo-bg.jpg") no-repeat 0 22%;
 }
 
 .promo img {
@@ -188,12 +193,12 @@ img.promo-title {
 
 .bg-left {
 	float: left;
-	background: #81b3d2 url('../img/fact-bgd-left.jpg') no-repeat;
+	background: #81b3d2 url("../img/fact-bgd-left.jpg") no-repeat;
 }
 
 .bg-right {
 	float: right;
-	background: #81b3d2 url('../img/fact-bgd-right.jpg') no-repeat;
+	background: #81b3d2 url("../img/fact-bgd-right.jpg") no-repeat;
 }
 
 .features {
@@ -255,7 +260,7 @@ img.promo-title {
 
 .map-bg {
 	height: 473px;
-	background: #f2f1ef url('../img/map.jpg') no-repeat;
+	background: #f2f1ef url("../img/map.jpg") no-repeat;
 }
 
 .search-block {
@@ -337,7 +342,7 @@ img.promo-title {
 	width: 21px;
 	height: 22px;
 	opacity: 0.2;
-	background: #f2f2f2 url('../img/spritesheet.png') no-repeat -10px -10px;
+	background: #f2f2f2 url("../img/spritesheet.png") no-repeat -10px -10px;
 }
 
 .calendar-icon:hover {
@@ -345,7 +350,7 @@ img.promo-title {
 }
 
 .calendar-icon:active {
-	background: #f2f2f2 url('../img/spritesheet.png') no-repeat -10px -52px;
+	background: #f2f2f2 url("../img/spritesheet.png") no-repeat -10px -52px;
 }
 
 .search-block input[type="number"] {
@@ -361,7 +366,7 @@ img.promo-title {
 	width: 12px;
 	height: 3px;
 	opacity: 0.5;
-	background: #f2f2f2 url('../img/spritesheet.png') no-repeat -10px -251px;
+	background: #f2f2f2 url("../img/spritesheet.png") no-repeat -10px -251px;
 }
 
 .control-minus:hover {
@@ -379,7 +384,7 @@ img.promo-title {
 	width: 11px;
 	height: 11px;
 	opacity: 0.5;
-	background: #f2f2f2 url('../img/spritesheet.png') no-repeat -10px -297px;
+	background: #f2f2f2 url("../img/spritesheet.png") no-repeat -10px -297px;
 }
 
 .control-plus:hover {
@@ -468,7 +473,7 @@ img.promo-title {
 .footer-copyright a {
 	width: 113px;
 	height: 39px;
-	background: #ffffff url('../img/spritesheet.png') no-repeat -10px -133px;
+	background: #ffffff url("../img/spritesheet.png") no-repeat -10px -133px;
 }
 
 .footer-copyright a:hover {
@@ -510,7 +515,7 @@ section.footer-social-btns {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: #81b3d2 url('../img/spritesheet.png') no-repeat;
+	background: #81b3d2 url("../img/spritesheet.png") no-repeat;
 }
 
 .social-btn:active::before {
@@ -540,7 +545,7 @@ section.footer-social-btns {
 .filters {
 	padding: 29px 70px;
 	color: #ffffff;
-	background: #4e7faa url('../img/filter-bgd.jpg') no-repeat 0 15%;
+	background: #4e7faa url("../img/filter-bgd.jpg") no-repeat 0 15%;
 }
 
 .filters-left-part {
@@ -595,6 +600,7 @@ section.footer-social-btns {
 
 .filters-left-part input[type="checkbox"]:disabled + .checkbox-indicator {
 	opacity: 0.5;
+	cursor: default;
 }
 
 .filters-left-part input[type="checkbox"]:checked + .checkbox-indicator::before {
@@ -903,7 +909,7 @@ section.footer-social-btns {
 	width: 18px;
 	height: 17px;
 	margin-right: 6px;
-	background: #ffffff url('../img/spritesheet.png') no-repeat -10px -359px;
+	background: #ffffff url("../img/spritesheet.png") no-repeat -10px -359px;
 }
 
 .rating-stars .star:last-child {
@@ -971,8 +977,8 @@ section.footer-social-btns {
 
 /*-----active-elements-----*/
 
-.active-link {
-	color: #766357;	
+.main-navigation .active-link {
+	color: #766357;		
 }
 
 .active-link:hover {
