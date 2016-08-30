@@ -5,7 +5,7 @@
     <title>Седона</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext" >
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-min.css">
   </head>
   <body>
 		<div class="container">
@@ -44,8 +44,10 @@
 			<!--end блок promo-->
 			<!--блок review-->
 				<section class="review">
-					<p class="review-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
-					<p class="review-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+					<p class="review-title">Седона — небольшой городок в Аризоне,<br>
+					 заслуживающий большего!</p>
+					<p class="review-text">Рассмотрим 5 причин, по которым Седона круче,
+					 чем Гранд Каньон!</p>
 				</section>
 			<!--end блок review-->
 			<!--факт с фоновым изображением-->
@@ -109,10 +111,9 @@
 			<!-- блок предложения поиска с кнопкой поиска внутри-->
 				<section class="search-form-title">
 					<h2>Заинтересовались?</h2>
-					<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-					<button class="search-btn" type="button" name="search-form-btn">
-						Поиск гостиницы в Седоне
-					</button>		
+					<p>Укажите предполагаемые даты поездки,<br>
+					 и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+					<a class="search-btn" href="form.html">Поиск гостиницы в Седоне</a>		
 				</section>
 			<!--end блок предложения поиска-->
 			<!--форма поиска-->
@@ -121,24 +122,24 @@
 						<div class="search-form_container">
 							<div class="form-line">
 								<label for="arrival-date">Дата заезда:</label>
-								<input type="date" id="arrival-date" name="arrival-date">
+								<input class="date-input" type="text" id="arrival-date" name="arrival-date" placeholder="24 апреля 2016">
 								<button type="button" class="calendar-icon"></button>
 							</div>
 							<div class="form-line">
 								<label for="departure-date">Дата выезда:</label>
-								<input type="date" id="departure-date" name="departure-date">
+								<input class="date-input" type="text" id="departure-date" name="departure-date" placeholder="4 июля 2016">
 								<button type="button" class="calendar-icon"></button>
 							</div>
 							<div class="form-line-container clearfix">
 								<div class="form-line to-left">
 									<label class="adults-label" for="adults">Взрослые:</label>
-									<input type="number" name="adults-number" id="adults" step="1" min="1" max="10">
+									<input class="numb-input" type="text" id="adults" name="adults-number" placeholder="2">
 									<button type="button" class="control-minus"></button>
 									<button type="button" class="control-plus"></button>
 								</div>
 								<div class="form-line to-right">
 									<label class="children-label" for="children">Дети:</label>
-									<input type="number" name="children-number" id="children" step="1" min="1" max="10">
+									<input class="numb-input" type="text" id="children" name="children-number" placeholder="0">
 									<button type="button" class="control-minus"></button>
 									<button type="button" class="control-plus"></button>
 								</div>
@@ -167,25 +168,6 @@
 			</footer>
 			<!--end main-footer-->
 		</div>
-		<script>
-			var link = document.querySelector(".search-btn");
-			var popup = document.querySelector(".search-form");
-			var close = true;
-						
-			link.addEventListener("click", function(event) {
-				event.preventDefault();
-			
-				if (close) {
-					popup.classList.add("popup-down");
-					close = false;
-				}
-					
-				else {
-					popup.classList.remove("popup-down");
-					close = true;
-				}
-				
-			});													
-		</script>
+		<script src="js/script-min.js"></script>
   </body>
 </html>
