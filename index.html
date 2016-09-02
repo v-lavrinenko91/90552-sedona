@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Седона</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext" >
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+	<head>
+		<meta charset="utf-8">
+		<title>Седона</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext" >
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.min.css">
+	</head>
+	<body>
 		<div class="container">
 			<!--main-header-->
 			<header class="main-header">
@@ -19,7 +19,7 @@
 						<li>
 							<a href="#">Фото и видео</a>
 						</li>
-						<li>
+						<li class="logo-li">
 							<a class="logo-link">
 								<img src="img/main-logo.png" width="137" height="70" alt="City of Sedona">
 							</a>
@@ -35,21 +35,21 @@
 			</header>
 			<!--end main-header-->
 			<main>
-			<!--блок promo-->
+				<!--блок promo-->
 				<div class="promo">
 					<img src="img/promo-text-top.png" width="256" height="86" alt="Welcome to the Gorgeus">
 					<img class="promo-title" src="img/promo-title.png" width="458" height="78" alt="Sedona">
 					<img src="img/promo-text-bottom.png" width="296" height="80" alt="Because the Grand Canyon sucks!">
 				</div>
-			<!--end блок promo-->
-			<!--блок review-->
+				<!--end блок promo-->
+				<!--блок review-->
 				<section class="review">
 					<p class="review-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
 					<p class="review-text">Рассмотрим 5 причин, по которым Седона круче,
-					 чем Гранд Каньон!</p>
+					чем Гранд Каньон!</p>
 				</section>
-			<!--end блок review-->
-			<!--факт с фоновым изображением-->
+				<!--end блок review-->
+				<!--факт с фоновым изображением-->
 				<div class="fact-with-img clearfix">
 					<section class="fact to-left">
 						<h2>Настоящий городок</h2>
@@ -58,8 +58,8 @@
 					</section>
 					<div class="fact-bg bg-right"></div>
 				</div>
-			<!--end факт с фоновым изображением-->
-			<!--особенности места-->
+				<!--end факт с фоновым изображением-->
+				<!--особенности места-->
 				<div class="features">
 					<section class="feature">
 						<img src="img/home-icon.png" width="75" height="72" alt="home">
@@ -77,8 +77,8 @@
 						<p>Не только китайского, но и местного производства!</p>
 					</section>
 				</div>
-			<!--end особенности места-->
-			<!--факт с фоновым изображением-->
+				<!--end особенности места-->
+				<!--факт с фоновым изображением-->
 				<div class="fact-with-img clearfix">
 					<section class="fact to-right">
 						<h2>Там есть мост дьявола</h2>
@@ -87,8 +87,8 @@
 					</section>
 					<div class="fact-bg bg-left"></div>
 				</div>
-			<!--end факт с фоновым изображением-->
-			<!--блок с фактами-->
+				<!--end факт с фоновым изображением-->
+				<!--блок с фактами-->
 				<div class="facts">
 					<section class="fact">
 						<h2>Небольшая площадь</h2>
@@ -106,46 +106,46 @@
 						<p>Большинство едет в Гранд Каньон и толпится там</p>
 					</section>
 				</div>
-			<!--end блок с фактами-->
-			<!-- блок предложения поиска с кнопкой поиска внутри-->
+				<!--end блок с фактами-->
+				<!-- блок предложения поиска с кнопкой поиска внутри-->
 				<section class="search-form-title">
 					<h2>Заинтересовались?</h2>
 					<p>Укажите предполагаемые даты поездки,<br>
-					 и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-					<a class="search-btn" href="form.html">Поиск гостиницы в Седоне</a>		
+					и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+					<a class="search-btn" href="form.html">Поиск гостиницы в Седоне</a>
 				</section>
-			<!--end блок предложения поиска-->
-			<!--форма поиска-->
+				<!--end блок предложения поиска-->
+				<!--форма поиска-->
 				<div class="search-block">
 					<form class="search-form" action="#" method="get">
 						<div class="form-line">
 							<label for="arrival-date">Дата заезда:</label>
-							<input class="date-input" type="text" id="arrival-date" name="arrival-date" placeholder="24 апреля 2016" required>
+							<input class="date-input" type="text" id="arrival-date" name="arrival-date" value="24 апреля 2016" required>
 							<button type="button" class="calendar-icon"></button>
 						</div>
 						<div class="form-line">
 							<label for="departure-date">Дата выезда:</label>
-							<input class="date-input" type="text" id="departure-date" name="departure-date" placeholder="4 июля 2016" required>
+							<input class="date-input" type="text" id="departure-date" name="departure-date" value="4 июля 2016" required>
 							<button type="button" class="calendar-icon"></button>
 						</div>
 						<div class="form-line-container clearfix">
 							<div class="form-line to-left">
 								<label class="adults-label" for="adults">Взрослые:</label>
-								<input class="numb-input" type="text" id="adults" name="adults-number" placeholder="2" required>
+								<input class="numb-input" type="text" id="adults" name="adults-number" value="2" required>
 								<button type="button" class="control-minus"></button>
 								<button type="button" class="control-plus"></button>
 							</div>
 							<div class="form-line to-right">
 								<label class="children-label" for="children">Дети:</label>
-								<input class="numb-input" type="text" id="children" name="children-number" placeholder="0" required>
+								<input class="numb-input" type="text" id="children" name="children-number" value="0" required>
 								<button type="button" class="control-minus"></button>
 								<button type="button" class="control-plus"></button>
 							</div>
 						</div>
 						<input type="submit" value="Найти">
-				</form>
+					</form>
 				</div>
-			<!--end форма поиска-->
+				<!--end форма поиска-->
 				<div class="map-bg">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d542529.2019944149!2d-111.77321108653645!3d34.998254913976666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1472537884562" frameborder="0" allowfullscreen></iframe>
 				</div>
@@ -165,6 +165,6 @@
 			</footer>
 			<!--end main-footer-->
 		</div>
-		<script src="js/script-min.js"></script>
-  </body>
+		<script src="js/script.min.js"></script>
+	</body>
 </html>
