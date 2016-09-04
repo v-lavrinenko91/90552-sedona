@@ -51,39 +51,28 @@ h2 {
 }
 
 .main-navigation li {
-	display: inline-block;
-	vertical-align: top;
+	float: left;
 	width: 240px;
 	padding-top: 15px;
 	padding-bottom: 12px;
 	text-align: center;
 }
 
-.main-navigation .logo-li {
-	position: relative;
-}
-
-.main-navigation img {
-	position: absolute;
-	top: 0;
-	left: 52px;
-}
-
-.main-navigation li:nth-child(5) {
+.main-navigation li:nth-child(4) {
 	width: 226px;
 	padding-left: 14px;
 }
 
-.main-navigation .logo-link {
+.main-navigation li:nth-child(3) {
+	margin-left: 240px;
+}
+
+.logo-link {
+	position: absolute;
+	left: 50%;
 	display: block;
-}
-
-.logo-link a {
-	display: inline;
-}
-
-.main-navigation .logo-link:active {
-	opacity: 1;
+	-webkit-transform: translateX(-50%);
+					transform: translateX(-50%);
 }
 
 .main-navigation a {
@@ -101,6 +90,10 @@ h2 {
 .main-navigation a:active {
 	opacity: 0.3;
 	color: #000000;
+}
+
+.main-navigation .logo-link:active {
+	opacity: 1;
 }
 
 /*------main-----*/
@@ -143,6 +136,7 @@ img.promo-title {
 }
 
 .review .review-text {
+	width: 492px;
 	line-height: 26px;
 }
 
@@ -322,7 +316,6 @@ img.promo-title {
 	font-size: 14px;
 	font-weight: bold;
 	text-align: left;
-	text-transform: uppercase;
 	background-color: #f2f2f2;
 }
 
@@ -344,6 +337,7 @@ img.promo-title {
 	line-height: 26px;
 	font-weight: bold;
 	text-align: left;
+	color: #000000;
 }
 
 .search-block .date-input {
@@ -458,6 +452,30 @@ img.promo-title {
 	box-shadow: none;
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #5496bd;
+}
+
+.date-input::-webkit-input-placeholder,
+.numb-input::-webkit-input-placeholder {
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.date-input::-moz-placeholder,
+.numb-input::-moz-placeholder {
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.date-input:-moz-placeholder,
+.numb-input:-moz-placeholder {
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.date-input:-ms-input-placeholder,
+.numb-input:-ms-input-placeholder {
+	text-transform: uppercase;
+	color: #000000;
 }
 
 /*-----footer-----*/
@@ -836,8 +854,7 @@ section.footer-social-btns {
 	font-size: 12px;
 	line-height: 18px;
 	text-decoration: none;
-	opacity: 0.7;
-	color: #000000;
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .sort-method a:hover {

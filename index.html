@@ -11,18 +11,16 @@
 		<div class="container">
 			<!--main-header-->
 			<header class="main-header">
-				<nav class="main-navigation">
+				<nav class="main-navigation clearfix">
+					<a class="logo-link">
+						<img src="img/main-logo.png" width="137" height="70" alt="City of Sedona">
+					</a>
 					<ul>
 						<li>
 							<a href="#">Информация</a>
 						</li>
 						<li>
 							<a href="#">Фото и видео</a>
-						</li>
-						<li class="logo-li">
-							<a class="logo-link">
-								<img src="img/main-logo.png" width="137" height="70" alt="City of Sedona">
-							</a>
 						</li>
 						<li>
 							<a href="#">Карта штата</a>
@@ -120,24 +118,24 @@
 					<form class="search-form" action="#" method="get">
 						<div class="form-line">
 							<label for="arrival-date">Дата заезда:</label>
-							<input class="date-input" type="text" id="arrival-date" name="arrival-date" value="24 апреля 2016" required>
+							<input class="date-input" type="text" id="arrival-date" name="arrival-date" placeholder="24 апреля 2016" required>
 							<button type="button" class="calendar-icon"></button>
 						</div>
 						<div class="form-line">
 							<label for="departure-date">Дата выезда:</label>
-							<input class="date-input" type="text" id="departure-date" name="departure-date" value="4 июля 2016" required>
+							<input class="date-input" type="text" id="departure-date" name="departure-date" placeholder="4 июля 2016" required>
 							<button type="button" class="calendar-icon"></button>
 						</div>
 						<div class="form-line-container clearfix">
 							<div class="form-line to-left">
 								<label class="adults-label" for="adults">Взрослые:</label>
-								<input class="numb-input" type="text" id="adults" name="adults-number" value="2" required>
+								<input class="numb-input" type="text" id="adults" name="adults-number" placeholder="2" required>
 								<button type="button" class="control-minus"></button>
 								<button type="button" class="control-plus"></button>
 							</div>
 							<div class="form-line to-right">
 								<label class="children-label" for="children">Дети:</label>
-								<input class="numb-input" type="text" id="children" name="children-number" value="0" required>
+								<input class="numb-input" type="text" id="children" name="children-number" placeholder="0" required>
 								<button type="button" class="control-minus"></button>
 								<button type="button" class="control-plus"></button>
 							</div>
