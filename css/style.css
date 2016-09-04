@@ -457,24 +457,28 @@ img.promo-title {
 .date-input::-webkit-input-placeholder,
 .numb-input::-webkit-input-placeholder {
 	text-transform: uppercase;
+	opacity: 1;
 	color: #000000;
 }
 
 .date-input::-moz-placeholder,
 .numb-input::-moz-placeholder {
 	text-transform: uppercase;
+	opacity: 1;
 	color: #000000;
 }
 
 .date-input:-moz-placeholder,
 .numb-input:-moz-placeholder {
 	text-transform: uppercase;
+	opacity: 1;
 	color: #000000;
 }
 
 .date-input:-ms-input-placeholder,
 .numb-input:-ms-input-placeholder {
 	text-transform: uppercase;
+	opacity: 1;
 	color: #000000;
 }
 
